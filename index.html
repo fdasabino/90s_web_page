@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>My 90s inspired website</title>
+  </head>
+  <body>
+    <header>
+      <a href="/"><img src="./assets/logo.png" alt="logo" class="logo" /></a>
+      <div class="toggle" onclick="toggleMenu()"></div>
+      <ul class="navigation">
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Menu</a></li>
+        <li><a href="/">What's new</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section id="section1">
+        <div class="circle"></div>
+        <div class="content">
+          <div class="textBox">
+            <h2>Some 90s things</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate rem assumenda
+              laborum dolores iure ipsa consequatur, facilis aspernatur, cupiditate nesciunt est
+              eveniet quam quidem suscipit.
+            </p>
+            <a href="/">Learn more</a>
+          </div>
+
+          <div class="imgBox">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/floppy_disk.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/old_pc.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/oldtv.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/old_phone.png" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="sci">
+        <li>
+          <a href="/"><img src="./assets/facebook.png" alt="facebook-logo" /></a>
+        </li>
+        <li>
+          <a href="/"><img src="./assets/twitter.png" alt="twitter-logo" /></a>
+        </li>
+        <li>
+          <a href="/"><img src="./assets/instagram.png" alt="instagram-logo" /></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
