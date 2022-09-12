@@ -14,15 +14,15 @@
       <a href="/"><img src="./assets/logo.png" alt="logo" class="logo" /></a>
       <div class="toggle" onclick="toggleMenu()"></div>
       <ul class="navigation">
-        <li><a href="/">Home</a></li>
-        <li><a href="/">Menu</a></li>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Cards</a></li>
         <li><a href="/">What's new</a></li>
         <li><a href="/">Contact</a></li>
       </ul>
     </header>
 
     <main>
-      <section id="section1">
+      <section class="section_container" id="section1">
         <div class="circle"></div>
         <div class="content">
           <div class="textBox">
@@ -52,6 +52,67 @@
                 </div>
               </div>
               <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section_container" id="section2">
+        <div class="section-container__wrapper">
+          <!-- card 1 -->
+          <div class="card">
+            <div class="face face1">
+              <div class="card__content">
+                <img src="./assets/floppy.png" alt="placeholder" />
+                <h3>Floppy Disk</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="card__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur accusantium
+                  reiciendis totam! Mollitia, iure.
+                </p>
+                <a href="/">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="card">
+            <div class="face face1">
+              <div class="card__content">
+                <img src="./assets/old-computer.png" alt="placeholder" />
+                <h3>Old PC</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="card__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur accusantium
+                  reiciendis totam! Mollitia, iure.
+                </p>
+                <a href="/">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="card">
+            <div class="face face1">
+              <div class="card__content">
+                <img src="./assets/old-mobile.png" alt="placeholder" />
+                <h3>Old Phone</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="card__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur accusantium
+                  reiciendis totam! Mollitia, iure.
+                </p>
+                <a href="/">Read More</a>
+              </div>
             </div>
           </div>
         </div>

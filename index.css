@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap");
 
-/* global styles */
+/******global styles******/
 * {
   padding: 0;
   margin: 0;
@@ -44,15 +44,14 @@ header .navigation li a {
   margin-left: 40px;
 }
 
-/* main section  */
-
-#section1 {
+/******main******/
+.section_container {
   position: relative;
   width: 100%;
   min-height: 100vh;
   padding: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: #161616;
 }
@@ -92,6 +91,7 @@ header .navigation li a {
 
 .content .textBox p {
   color: #fff;
+  line-height: 1.5rem;
 }
 
 .content .textBox a {
@@ -103,12 +103,19 @@ header .navigation li a {
   text-decoration: none;
   border-radius: 40px;
   font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+}
+
+.content .textBox a:hover {
+  background: #fff;
+  color: #3c054d;
 }
 
 .content .imgBox {
   width: 600px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .content .imgBox img {
@@ -126,9 +133,10 @@ header .navigation li a {
   background-position: center;
   background-size: cover;
   width: 180px;
-  height: 300px;
+  height: 180px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .swiper-slide img {
@@ -141,7 +149,11 @@ header .navigation li a {
 
 /******end******/
 
-.sci {
+footer {
+  position: relative;
+}
+
+footer .sci {
   position: absolute;
   bottom: 40px;
   left: 100px;
@@ -150,11 +162,11 @@ header .navigation li a {
   align-items: center;
 }
 
-.sci li {
+footer .sci li {
   list-style: none;
 }
 
-.sci li a {
+footer .sci li a {
   display: inline-block;
   margin-left: 15px;
   background: #222;
@@ -167,20 +179,117 @@ header .navigation li a {
   transition: all 0.2s ease-in-out;
 }
 
-.sci li a:hover {
+footer .sci li a:hover {
   background-color: #3c054d;
   transform: translateY(-10px);
 }
 
-.sci li a img {
+footer .sci li a img {
   filter: invert(1);
   transform: scale(0.5);
 }
 
-footer {
+/******cards section******/
+.section-container__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.section-container__wrapper .card {
   position: relative;
 }
 
+.container .card .face {
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s;
+}
+
+.section-container__wrapper .card .face.face1 {
+  position: relative;
+  background: #ccc;
+  height: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 1;
+  transform: translateY(100px);
+  border-radius: 20px 20px 0px 0px;
+}
+
+.section-container__wrapper .card:hover .face.face1 {
+  transform: translateY(0px);
+  background: #3c054d;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-container__wrapper .card .face.face1 .card__content {
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
+.section-container__wrapper .card:hover .face.face1 .card__content {
+  opacity: 1;
+}
+
+.section-container__wrapper .card .face.face1 .card__content img {
+  max-width: 100px;
+}
+
+.section-container__wrapper .card .face.face1 .card__content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+.section-container__wrapper .card .face.face2 {
+  opacity: 0.5;
+  width: 300px;
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.section-container__wrapper .card .face.face2 p {
+  margin: 0;
+  padding: 0;
+}
+.section-container__wrapper .card .face.face2 a {
+  margin: 15px 0 0;
+  display: inline-block;
+
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.section-container__wrapper .card .face.face2 a:hover {
+  background: #333;
+  color: #fff;
+  transform: translateY(-100px);
+}
+
+.section-container__wrapper .card:hover .face.face2 a:hover {
+  transform: translateY(0px);
+}
+
+/******end******/
+
+/******media queries******/
 @media (max-width: 991px) {
   header {
     padding: 10px 40px;
@@ -203,6 +312,11 @@ footer {
     z-index: 1000;
     transition: all 0.2s ease-in-out;
   }
+
+  .toggle:hover {
+    transform: scale(1.2);
+  }
+
   .toggle.active {
     position: fixed;
     right: 40px;
@@ -218,7 +332,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #222;
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,10 +369,16 @@ footer {
 
   .content .textBox a {
     background-color: #222;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .content .textBox a:hover {
+    background-color: #fff;
+    color: #000;
   }
 
   .swiper-slide {
     width: 30%;
-    height: 300px;
+    height: 200px;
   }
 }
