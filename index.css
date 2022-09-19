@@ -41,7 +41,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  background-color: #e2f3f5de;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 header .logo {
@@ -74,14 +74,13 @@ header .navigation li a:hover {
 }
 
 .navigation li a.active {
-  border-bottom: 1px solid #22d1ee;
+  border-bottom: 1px solid #000;
   transform: scale(1.1);
 }
 
 .section_container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   padding: 15rem;
   display: flex;
   justify-content: center;
@@ -92,11 +91,6 @@ header .navigation li a:hover {
   background: #fff;
 }
 /******main******/
-
-.section_container p {
-  color: #fff;
-  font-size: 1.3rem;
-}
 
 #section1 .circle {
   position: absolute;
@@ -124,9 +118,7 @@ header .navigation li a:hover {
 }
 
 .textBox p {
-  color: #000;
-  line-height: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .textBox a {
@@ -182,12 +174,115 @@ header .navigation li a:hover {
   display: block;
   width: 100%;
 }
+/******end******/
 
+/******cards section******/
+
+.card_section_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.card .face {
+  transition: all 0.5s;
+  border-radius: 10%;
+}
+
+.card .face.face1 {
+  position: relative;
+  background: #3d5af1;
+  width: 300px;
+  height: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.card:hover .face.face1 {
+  transform: translateY(0px);
+  background: #ccc;
+  transition: all 0.5s ease-in-out;
+}
+
+.card .face.face1 .card__content {
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover .face.face1 .card__content {
+  opacity: 1;
+}
+
+.card .face.face1 .card__content img {
+  max-width: 100px;
+}
+
+.card .face.face1 .card__content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card .face.face2 {
+  width: 300px;
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease-in-out;
+  border-radius: 50%;
+}
+
+.card .face.face2 p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+.card .face.face2 a {
+  margin: 15px 0 0;
+  display: inline-block;
+
+  text-decoration: none;
+  font-weight: 900;
+  padding: 5px;
+  color: #fff;
+  background: #3d5af1;
+}
+
+.card .face.face2 a:hover {
+  background: #fff;
+  border: 1px solid #3d5af1;
+  color: #3d5af1;
+}
 /******end******/
-/******end******/
+/******Footer******/
 
 footer {
   position: relative;
+}
+
+.footer_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 footer .sci {
@@ -225,6 +320,7 @@ footer .sci li a img {
   filter: invert(1);
   transform: scale(0.5);
 }
+/******end******/
 
 /******media queries******/
 @media (max-width: 991px) {
@@ -288,7 +384,14 @@ footer .sci li a img {
   }
 
   .sci {
-    left: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  footer .sci li a:hover {
+    transform: translateX(10px);
   }
 
   .content {
