@@ -4,116 +4,169 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Curiosities about the 90s that will blow your mind."
-    />
+    <meta name="description" content="The Life of a legend of motor sport, Ayrton Senna." />
     <meta name="keywords" content="Learn, improve, information" />
     <meta name="author" content="Francisco Sabino" />
     <!-- Link Swiper's CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./index.css" />
-    <title>My 90s inspired website</title>
+    <title>The legend - Ayrton Senna</title>
   </head>
   <body>
     <header>
-      <a href="#section1"
-        ><img src="./assets/logo.png" alt="logo" class="logo"
-      /></a>
+      <a href="#section1"><img src="./assets/logo.png" alt="logo" class="logo" /></a>
       <div class="toggle" onclick="toggleMenu()"></div>
       <ul class="navigation">
         <li><a onclick="closeMenuOnClick()" href="#section1">Home</a></li>
-        <li><a onclick="closeMenuOnClick()" href="#section2">Cards</a></li>
-        <li><a onclick="closeMenuOnClick()" href="#section3">What's new</a></li>
-        <li><a onclick="closeMenuOnClick()" href="#section4">Contact</a></li>
-      </ul>
+        <li><a onclick="closeMenuOnClick()" href="#section2">About</a></li>
+        <!-- <li><a onclick="closeMenuOnClick()" href="#section3">Facts</a></li> -->
+        
     </header>
 
     <main>
       <section class="section_container" id="section1">
-        <div class="circle"></div>
-        <div class="content">
-          <div class="textBox">
-            <h1>Some 90s things</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              tenetur deleniti mollitia provident, enim sapiente. Obcaecati
-              explicabo quia fugiat ab dolor! Commodi consectetur sunt
-              molestiae!
-            </p>
-            <a href="/">Learn more</a>
-          </div>
-          <div class="imgBox">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./assets/floppy_disk.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/old_pc.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/oldtv.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./assets/old_phone.png" />
-                </div>
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="./assets/hero.png"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Ayrton Senna png image"
+                width="700"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">Ayrton Senna</h1>
+              <p class="lead">
+                “On a given day, a given circumstance, you think you have a limit. And you then go
+                for this limit and you touch this limit, and you think, ‘Okay, this is the limit’.
+                And so you touch this limit, something happens and you suddenly can go a little bit
+                further. With your mind power, your determination, your instinct, and the experience
+                as well, you can fly very high.”<br />
+                <strong class="fw-bold"> Ayrton Senna</strong>
+                <img src="./assets/senna-signature.png" alt="senna signature" class="signature" />
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="#section2" class="btn btn-danger btn-lg px-4 me-md-2">Read More</a>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="section_container" id="section2">
-        <div class="card_section_wrapper">
-          <div class="card">
-            <div class="face face1">
-              <div class="card__content">
-                <img src="./assets/floppy.png" alt="placeholder" />
-                <h3>Floppy Disk</h3>
+        <div class="container text-center">
+          <h2 class="pb-2 border-bottom">About</h2>
+          <p>
+            Ayrton Senna da Silva was a Brazilian racing driver who won the Formula One World
+            Drivers' Championship in 1988, 1990, and 1991. Senna is one of three Formula One drivers
+            from Brazil to win the World Championship and won 41 Grands Prix and 65 pole positions,
+            with the latter being the record until 2006.
+          </p>
+          <a
+            href="https://www.youtube.com/watch?v=-pItzcHBHt0"
+            target="_blank"
+            class="btn btn-danger"
+            >Watch video</a
+          >
+        </div>
+        <div class="container px-4 py-5" id="custom-cards">
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <!-- card -->
+            <div class="col">
+              <div class="container">
+                <div
+                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                  style="background-image: url('./assets/card2.jpg')"
+                >
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="p3-5 mt-5 mb-3 display-6 lh-1 fw-bold text-center">
+                      The life of a legend
+                    </h3>
+                    <p class="text-center p-2">
+                      In 2009 Ayrton Senna has been voted the greatest Formula 1 driver of all time
+                      by poll of 217 of his fellow world championship drivers including sir Lewis
+                      Hamilton.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="face face2">
-              <div class="card__content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur accusantium reiciendis totam! Mollitia, iure.
-                </p>
-                <a href="/">Read More</a>
+
+            <!-- card -->
+            <div class="col">
+              <div class="container">
+                <div
+                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                  style="background-image: url('./assets/card2.jpg')"
+                >
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="p3-5 mt-5 mb-3 display-6 lh-1 fw-bold text-center">
+                      Standing records
+                    </h3>
+                    <p class="text-center p-2">
+                      Senna is the King of Monaco, with 6 wins in the Principality, a record that
+                      still stands today in F1. Making him only Brazilian driver who has ever won
+                      the race.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- card -->
+            <div class="col">
+              <div class="container">
+                <div
+                  class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                  style="background-image: url('./assets/card2.jpg')"
+                >
+                  <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="p3-5 mt-5 mb-3 display-6 lh-1 fw-bold text-center">
+                      A racing master
+                    </h3>
+                    <p class="text-center p-2">
+                      As the King of Pole-Positions, Ayrton Senna tended to win every time he
+                      started in the first, second or third row. But starting from the back never
+                      stopped him from winning the race.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
       </section>
 
-      <section class="section_container" id="section3"></section>
-      <section class="section_container" id="section4"></section>
+      <!-- <section class="section_container" id="section3"></section> -->
+      <!-- <section class="section_container" id="section4"></section> -->
     </main>
 
     <footer>
       <div class="footer_header">
-        <h3>A 90s guy...All rights reserved.</h3>
+        <h6 class="mx-3">&#169; 2022, All rights reserved</h6>
+        <img src="./assets/logo.png" alt="senna logo" class="logo">
       </div>
-      <ul class="sci">
-        <li>
-          <a href="/"
-            ><img src="./assets/facebook.png" alt="facebook-logo"
-          /></a>
-        </li>
+        <ul class="sci">
+          <li>
+            <a href="/"><img src="./assets/facebook.png" alt="facebook-logo" /></a>
+          </li>
         <li>
           <a href="/"><img src="./assets/twitter.png" alt="twitter-logo" /></a>
         </li>
         <li>
-          <a href="/"
-            ><img src="./assets/instagram.png" alt="instagram-logo"
-          /></a>
+          <a href="/"><img src="./assets/instagram.png" alt="instagram-logo" /></a>
         </li>
       </ul>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
     <script src="./index.js"></script>
   </body>
 </html>
