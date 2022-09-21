@@ -8,14 +8,16 @@
     <meta name="keywords" content="Learn, improve, information" />
     <meta name="author" content="Francisco Sabino" />
     <!-- Link Swiper's CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/splash.css" />
     <title>The legend - Ayrton Senna</title>
   </head>
+
   <body>
     <header>
       <a href="#section1"><img src="./assets/logo.png" alt="logo" class="logo" /></a>
@@ -23,8 +25,8 @@
       <ul class="navigation">
         <li><a onclick="closeMenuOnClick()" href="#section1">Home</a></li>
         <li><a onclick="closeMenuOnClick()" href="#section2">About</a></li>
-        <!-- <li><a onclick="closeMenuOnClick()" href="#section3">Facts</a></li> -->
-        
+        <li><a onclick="closeMenuOnClick()" href="#section3">Gallery</a></li>
+      </ul>
     </header>
 
     <main>
@@ -48,7 +50,7 @@
                 for this limit and you touch this limit, and you think, ‘Okay, this is the limit’.
                 And so you touch this limit, something happens and you suddenly can go a little bit
                 further. With your mind power, your determination, your instinct, and the experience
-                as well, you can fly very high.”<br />
+                as well, you can fly very high."<br />
                 <strong class="fw-bold"> Ayrton Senna</strong>
                 <img src="./assets/senna-signature.png" alt="senna signature" class="signature" />
               </p>
@@ -56,6 +58,66 @@
                 <a href="#section2" class="btn btn-danger btn-lg px-4 me-md-2">Read More</a>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="container">
+          <!-- Paralax -->
+          <div
+            style="--swiper-navigation-color: red; --swiper-pagination-color: #fff"
+            class="swiper mySwiper"
+          >
+            <div
+              class="parallax-bg"
+              style="background-image: url(./assets/paralax.png)"
+              data-swiper-parallax="-23%"
+            ></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">Slide 1</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
+                    velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
+                    porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac
+                    laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
+                    libero. Aenean feugiat non eros quis feugiat.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">Slide 2</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
+                    velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
+                    porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac
+                    laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
+                    libero. Aenean feugiat non eros quis feugiat.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">Slide 3</div>
+                <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                <div class="text" data-swiper-parallax="-100">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis
+                    velit, sit amet faucibus felis iaculis nec. Nulla laoreet justo vitae porttitor
+                    porttitor. Suspendisse in sem justo. Integer laoreet magna nec elit suscipit, ac
+                    laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                    ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut
+                    libero. Aenean feugiat non eros quis feugiat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </section>
@@ -144,19 +206,44 @@
         </div>
       </section>
 
-      <!-- <section class="section_container" id="section3"></section> -->
+      <section class="section_container" id="section3">
+        <div class="container text-center">
+          <h2 class="pb-2 border-bottom">Gallery</h2>
+          <hr />
+          <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+              <img src="./assets/large-img.jpg" class="gallery__img" alt="Image 1" />
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+              <img src="./assets/large-img.jpg" class="gallery__img" alt="Image 1" />
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+              <img src="./assets/large-img.jpg" class="gallery__img" alt="Image 1" />
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+              <img src="./assets/large-img.jpg" class="gallery__img" alt="Image 1" />
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+              <img src="./assets/large-img.jpg" class="gallery__img" alt="Image 1" />
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+              <img src="./assets/large-img.jpg" class="gallery__img" alt="Image 1" />
+            </figure>
+          </div>
+        </div>
+      </section>
       <!-- <section class="section_container" id="section4"></section> -->
     </main>
 
     <footer>
       <div class="footer_header">
         <h6 class="mx-3">&#169; 2022, All rights reserved</h6>
-        <img src="./assets/logo.png" alt="senna logo" class="logo">
+        <img src="./assets/logo.png" alt="senna logo" class="logo" />
       </div>
-        <ul class="sci">
-          <li>
-            <a href="/"><img src="./assets/facebook.png" alt="facebook-logo" /></a>
-          </li>
+      <ul class="sci">
+        <li>
+          <a href="/"><img src="./assets/facebook.png" alt="facebook-logo" /></a>
+        </li>
         <li>
           <a href="/"><img src="./assets/twitter.png" alt="twitter-logo" /></a>
         </li>
@@ -166,7 +253,7 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
   </body>
 </html>
