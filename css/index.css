@@ -49,18 +49,16 @@ header .navigation li a {
   color: #000;
   font-weight: 900;
   text-decoration: none;
-  margin-left: 40px;
+  margin-left: 2rem;
   transition: all 0.2s ease-in-out;
 }
 
 header .navigation li a:hover {
-  transform: scale(1.1);
   color: #e12020;
 }
 
 .navigation li a.active {
   border-bottom: 1px solid #000;
-  transform: scale(1.1);
 }
 
 /******main******/
