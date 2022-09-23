@@ -5,6 +5,7 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   allowSlidePrev: true,
   parallax: true,
+
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
