@@ -1,5 +1,5 @@
 const createCarousel = (config) => {
-  const { selector, images, trigger } = config;
+  const { selector, images } = config;
 
   const even = images.length % 2 === 0;
   const activeImageIndex = Math.floor(images.length / 2);
@@ -21,8 +21,8 @@ const createCarousel = (config) => {
               .join("")}
         </ul>
         <div class="arrows">
-           <button class="left" data-target="left"><</button>
-          <button class="right" data-target="right">></button>
+           <span><button class="left" data-target="left"><</button></span>
+           <span><button class="right" data-target="right">></button></span>
         </div>
     `;
 
@@ -59,26 +59,13 @@ const createCarousel = (config) => {
         break;
     }
   });
-
-  if (trigger === "hover") {
-    container.addEventListener("mouseover", (event) => {
-      if (event.target.dataset.target === "img") {
-        event.target.classList.add("zoom");
-      }
-    });
-
-    container.addEventListener("mouseout", (event) => {
-      if (event.target.dataset.target === "img") {
-        event.target.classList.remove("zoom");
-      }
-    });
-  }
 };
 
 const images = [
   {
     src: "../assets/gallery/ayrton-senna.jpg",
     alt: "formula 1 car",
+    name: "ayrton-senna",
   },
   {
     src: "../assets/gallery/ayrton-senna1.jpg",
@@ -124,6 +111,5 @@ const images = [
 
 createCarousel({
   selector: ".carousel",
-  trigger: "click",
   images,
 });
