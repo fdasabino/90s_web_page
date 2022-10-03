@@ -3,7 +3,6 @@ const popup = document.getElementById("popup");
 selectedImage = document.getElementById("selectedImage");
 
 const imageIndexes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const selectedIndex = null;
 
 imageIndexes.forEach((i) => {
   const image = document.createElement("img");
