@@ -117,17 +117,12 @@ header .navigation li a:hover {
   background-position: center;
 }
 
-.swiper-slide .title {
-  font-size: 41px;
-  font-weight: 300;
-}
-
 .swiper-slide .subtitle {
-  font-size: 21px;
+  font-size: 2rem;
 }
 
 .swiper-slide .text {
-  font-size: 14px;
+  font-size: 1rem;
   max-width: 400px;
   line-height: 1.3;
 }
