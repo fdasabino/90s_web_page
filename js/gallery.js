@@ -2,18 +2,29 @@ const gallery = document.getElementById("gallery");
 const popup = document.getElementById("popup");
 selectedImage = document.getElementById("selectedImage");
 
-const imageIndexes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const imageDescription = [
+  "Senna in the curves with his maclaren f1 silverstone 2",
+  "Senna holding his helmet",
+  "Senna waves to the fans",
+  "Close up of sennas maclaren f1",
+  "Frontal shot of sennas toleman",
+  "Upper shot of sennas lotus f1",
+  "Senna waves the brazilian flag after winning in canada",
+  "Diagonal shot of sennas toleman",
+  "Senna in the curves with his maclaren f1 silverstone",
+  "Frontal shot of senna's lotus",
+];
 
-imageIndexes.forEach((i) => {
+imageDescription.forEach((description, index) => {
   const image = document.createElement("img");
-  image.src = `../assets/gallery/ayrton-senna${i}.jpg`;
-  image.alt = `Senna in action in his car around the track${i}`;
+  image.src = `../assets/gallery/ayrton-senna${index}.jpg`;
+  image.alt = description;
   image.classList.add("galleryImg");
   image.addEventListener("click", () => {
     //popup
     popup.style.transform = `translateY(0)`;
-    selectedImage.src = `../assets/gallery/ayrton-senna${i}.jpg`;
-    selectedImage.alt = `Senna in action in his car around the track${i}`;
+    selectedImage.src = `../assets/gallery/ayrton-senna${index}.jpg`;
+    selectedImage.alt = description;
   });
   gallery.appendChild(image);
 });

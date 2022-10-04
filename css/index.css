@@ -155,13 +155,20 @@ header .navigation li a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 1);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transform: translateY(-100%);
   transition: transform 0.5s;
   padding: 3rem;
+  z-index: 10;
+}
+
+#popup h6 {
+  padding-top: 1rem;
+  color: #fff;
 }
 
 #selectedImage {
@@ -172,6 +179,7 @@ header .navigation li a:hover {
 footer {
   position: relative;
   padding: 1rem 2rem;
+  z-index: 0;
 }
 
 .footer_header {
@@ -184,6 +192,7 @@ footer .sci {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 footer .sci li {
@@ -191,7 +200,6 @@ footer .sci li {
 }
 
 footer .sci li a {
-  display: inline-block;
   margin-left: 1.2rem;
   background: #222;
   width: 50px;
