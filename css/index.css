@@ -11,6 +11,11 @@
   font-family: "Comfortaa", cursive;
 }
 
+html,
+body {
+  background: linear-gradient(to right, rgb(236, 233, 230), rgb(255, 255, 255));
+}
+
 /* width */
 ::-webkit-scrollbar {
   display: none;
@@ -66,6 +71,11 @@ header .navigation li a:hover {
 }
 
 /******main******/
+.hero_img {
+  max-width: 25rem;
+  min-width: 15rem;
+}
+
 .section_container {
   position: relative;
   min-height: fit-content;
@@ -238,6 +248,10 @@ footer .logo {
     display: none;
   }
 
+  .hero_img {
+    max-width: 20rem;
+  }
+
   .toggle {
     display: block;
     position: relative;
@@ -311,5 +325,11 @@ footer .logo {
   .content .textBox a:hover {
     background-color: #22d1ee;
     color: #000;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero_img {
+    max-width: 15rem;
   }
 }
