@@ -28,6 +28,12 @@
 - [SwiperJS](https://swiperjs.com/)
 - [FontAwesome](https://fontawesome.com/)
 
+#### Validation
+
+The HTML and CSS pass the validation, tests provided by [W3C-Validator]("https://validator.w3.org/), with some minor warnings.
+
+![Validation Image](https://res.cloudinary.com/frank2021/image/upload/v1665085126/portfolio/validation_hdxbit.png)
+
 ### Acknowledgments
 
 - I would like to thank Christoffer Teye, and my support group for the time we shared during, and the ideas provided.
