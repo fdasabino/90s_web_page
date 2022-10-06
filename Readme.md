@@ -28,6 +28,11 @@
 - [SwiperJS](https://swiperjs.com/)
 - [FontAwesome](https://fontawesome.com/)
 
+### Imagery
+
+- The pictures provided on the page were downloaded from - [Unsplash](https://unsplash.com/)
+  and [Pexel](https://pexels.com/), and require no attribution.
+
 ### Acknowledgments
 
 - I would like to thank Christoffer Teye, and my support group for the time we shared during, and the ideas provided.
