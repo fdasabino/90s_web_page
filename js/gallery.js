@@ -1,6 +1,8 @@
+"use strict";
+
 const gallery = document.getElementById("gallery");
 const popup = document.getElementById("popup");
-selectedImage = document.getElementById("selectedImage");
+let selectedImage = document.getElementById("selectedImage");
 
 const imageDescription = [
   "Senna in the curves with his maclaren f1 silverstone 2",
