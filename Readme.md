@@ -51,6 +51,8 @@
 
 - This page uses best accessibility's practices such alt and aria tags.
 
+![aria and alt](https://res.cloudinary.com/frank2021/image/upload/v1669903075/90s_webpage/alt_ariatags_fgpiib.png)
+
 - This page also employs some of the best practices for SEO, and has a high lighthouse score.
 
 ![head meta tags](https://res.cloudinary.com/frank2021/image/upload/v1669902846/90s_webpage/head_tag_kpwy22.png)
