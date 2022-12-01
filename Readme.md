@@ -49,9 +49,11 @@
 
 - Search engine optimization (SEO) is the practice of orienting your website to rank higher on a search engine results page so that you receive more traffic. The aim is typically to rank on the first page of Google results for search terms that mean the most to your target audience.
 
-- Uses best accessibility's practices such alt and aria tags.
+- This page uses best accessibility's practices such alt and aria tags.
 
-- This page employs some of the best practices for SEO, and has a high lighthouse score.
+- This page also employs some of the best practices for SEO, and has a high lighthouse score.
+
+![head meta tags](https://res.cloudinary.com/frank2021/image/upload/v1669902846/90s_webpage/head_tag_kpwy22.png)
 
 - Mobile:
 
