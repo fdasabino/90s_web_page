@@ -1,3 +1,5 @@
+"use strict";
+
 // mobile navigation toggler
 const toggleMenu = () => {
   const menuToggle = document.querySelector(".toggle");
@@ -7,7 +9,8 @@ const toggleMenu = () => {
   navigation.classList.toggle("show");
 
   const bodyOverflow = document.body.style.overflow;
-  document.body.style.overflow = bodyOverflow === "hidden" ? "scroll" : "hidden";
+  document.body.style.overflow =
+    bodyOverflow === "hidden" ? "scroll" : "hidden";
 };
 const closeMenuOnClick = () => {
   toggleMenu(false);
